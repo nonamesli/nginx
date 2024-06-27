@@ -34,5 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://gcr.io/arm64v8/nginx:latest registry.cn-hangzhou.aliyuncs.com/nonamesli/arm64v8/nginx:latest
+        skopeo copy docker:ghcr.io/snowdreamtech/nginx:1.24.0-alpine-perl registry.cn-hangzhou.aliyuncs.com/nonamesli/arm64v8/nginx:latest
  
