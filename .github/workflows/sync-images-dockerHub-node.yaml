@@ -33,5 +33,6 @@ jobs:
         
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
+        search arm64v8/node
         #!/usr/bin/env bash
-        skopeo copy docker://snowdreamtech/arm64v8/node:latest docker://registry.cn-hangzhou.aliyuncs.com/nonamesli/node_arm64v8:latest
+        # skopeo copy docker://snowdreamtech/arm64v8/node:latest docker://registry.cn-hangzhou.aliyuncs.com/nonamesli/node_arm64v8:latest
